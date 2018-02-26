@@ -1,0 +1,8 @@
+<div class="container" align="center">
+  <ul *ngFor="let post of posts">
+      <div class="post">
+        <h4><span class='left title'>{{ post.title }}</span></h4><span class='right'>{{ post.publishedDate }}</span><br>
+        <h5><span class='left desc'>{{ post.description }}</span></h5>
+      </div>
+  </ul>
+</div>

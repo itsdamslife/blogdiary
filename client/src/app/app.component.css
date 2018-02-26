@@ -1,0 +1,60 @@
+.toolbar {
+    flex-direction: column;
+    background: #004C70; 
+    height:100px;
+}
+
+.title-row {
+    flex-direction: column;
+}
+
+.title {
+    color: white; 
+    align-self: center;
+    margin: 5px;
+    font-size: xx-large;
+}
+
+.desc-div {
+    display: block;
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+.description {
+    color: lightgray;
+}
+
+.new-post-btn-div {
+    display: block;
+    margin-left: auto;
+    margin-right: 0px;
+    margin-bottom: 12px;
+}
+
+.new-post-btn {
+    height: 42px;
+    color: #004C70;
+    font-weight: unset;
+    font-size: 18px;
+    float: right;
+}
+
+nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+  nav a:visited, a:link {
+    color: #607D8B;
+  }
+  nav a:hover {
+    color: #039be5;
+    background-color: #CFD8DC;
+  }
+  nav a.active {
+    color: #039be5;
+  }

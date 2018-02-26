@@ -1,0 +1,43 @@
+div.container {
+    width: 100%;
+}
+
+div.post {
+    background-color: lightblue;
+    height: 80px;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 1%;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.left { 
+    float: left; 
+}
+
+.right { 
+    float: right; 
+}
+
+.title {
+    width: 70%;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.desc {
+    width: 100%;
+    overflow: hidden;
+    color: #666;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

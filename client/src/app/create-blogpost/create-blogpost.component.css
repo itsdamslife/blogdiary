@@ -1,0 +1,27 @@
+.toolbar {
+    flex: auto;
+}
+
+.container {
+    display: table;
+    width: 100%;
+}
+
+.column {
+  display: table-cell;
+}
+
+.cancel-btn {
+  float: left;
+}
+
+.title-text {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.save-btn {
+    float: right;
+}
+
+
