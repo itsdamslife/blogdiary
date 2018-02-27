@@ -3,25 +3,50 @@
 }
 
 .container {
-    display: table;
-    width: 100%;
-}
-
-.column {
-  display: table-cell;
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+    width: 98%;
 }
 
 .cancel-btn {
-  float: left;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .title-text {
+  overflow: hidden;
   text-align: center;
-  vertical-align: middle;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .save-btn {
-    float: right;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 
+/* #container {
+  width:100%; 
+  font-size:0;
+}
+
+#left, #middle, #right { 
+  display: inline-block; 
+  *display: inline; 
+  zoom: 1; 
+  vertical-align: center; 
+  font-size: 12px;
+}
+
+#left {width: 24%; background: blue;}
+#middle {width: 50%; background: green;}
+#right {width: 24%; background: yellow;}
+ */

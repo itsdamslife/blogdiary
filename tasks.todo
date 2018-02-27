@@ -1,7 +1,14 @@
 
 
 Today's task list:
-    ☐ Move the Header only to blog post list page not to new post page
-    ☐ Space out the cancel, save and new post title elements
+    ✔ Move the Header only to blog post list page not to new post page @today @done (2018-2-27 06:17:22)
+    ✔ Space out the cancel, save and new post title elements @today @done (2018-2-27 22:28:49)
+
+    
+Need to learn:
+    ✔ CSS - how to stick the elements in their position @critical  - using display: grid; @done (2018-2-27 22:29:13)
+    ✔ Right way to horizontally align elements in a container @critical - using grid columns @done (2018-2-27 22:29:31)
+    ☐ Flexbox - to go with @low 
+    ☐ CSS Grid layout - @low 
 
     
