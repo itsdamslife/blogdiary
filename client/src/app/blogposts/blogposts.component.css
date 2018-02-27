@@ -2,7 +2,7 @@
 
 .toolbar {
     flex-direction: column;
-    background: #004C70; 
+    background: steelblue; 
     height:100px;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .title {
-    color: white; 
+    color: whitesmoke; 
     align-self: center;
     margin: 5px;
     font-size: xx-large;
@@ -19,8 +19,14 @@
 
 .desc-div {
     display: block;
+    width: 70%;
     margin-left: 0px;
     margin-right: auto;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .description {
@@ -68,7 +74,7 @@ div.container {
 }
 
 div.post {
-    background-color: lightblue;
+    background-color: rgb(52, 64, 68);
     height: 80px;
     margin-left: 1%;
     margin-right: 1%;
@@ -89,6 +95,7 @@ ul {
 }
 
 .post-title {
+    color: azure;
     width: 70%;
     overflow: hidden;
     text-align: left;
@@ -98,11 +105,15 @@ ul {
 }
 
 .post-desc {
+    color: bisque;
     width: 100%;
     overflow: hidden;
-    color: #666;
     text-align: left;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+}
+
+.date-text {
+    color: tan;
 }
