@@ -9,6 +9,10 @@ import { BLOGPOSTS } from '../mock_blogposts';
 })
 export class BlogpostsComponent implements OnInit {
 
+  title = 'Blogger Diary';
+  description = 'This is my personal diary to journal my tech findings.';
+
+
   blogpost: Blogpost = {
     id: 1,
     title: 'Learning Angular',
@@ -22,5 +26,9 @@ export class BlogpostsComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  createNewPost() {
+  }
+
 
 }
