@@ -40,14 +40,6 @@
     margin-bottom: 12px;
 }
 
-.new-post-btn {
-    height: 42px;
-    color: #004C70;
-    font-weight: unset;
-    font-size: 18px;
-    float: right;
-}
-
 nav a {
     padding: 5px 10px;
     text-decoration: none;
