@@ -60,21 +60,13 @@ nav a.active {
     color: #039be5;
 }
 
-
-/* #container {
-  width:100%; 
-  font-size:0;
+#titleField {
+    width: 97%;
+    margin: 1%;
 }
 
-#left, #middle, #right { 
-  display: inline-block; 
-  *display: inline; 
-  zoom: 1; 
-  vertical-align: center; 
-  font-size: 12px;
+#blogpost {
+    width: 97%;
+    min-height: 500px;
+    margin: 1%
 }
-
-#left {width: 24%; background: blue;}
-#middle {width: 50%; background: green;}
-#right {width: 24%; background: yellow;}
- */

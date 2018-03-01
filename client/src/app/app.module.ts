@@ -4,6 +4,7 @@ import { MatToolbarModule } from '@angular/material';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BlogpostsComponent } from './blogposts/blogposts.component';
@@ -24,7 +25,8 @@ import { AppRoutingModule } from './/app-routing.module';
     MatToolbarModule,
     MatMenuModule,
     MatIconModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [ BlogpostService ],
   bootstrap: [AppComponent]

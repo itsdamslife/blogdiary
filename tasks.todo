@@ -5,7 +5,8 @@ Today's task list:
     ✔ Move the Header only to blog post list page not to new post page @today @done (2018-2-27 06:17:22)
     ✔ Space out the cancel, save and new post title elements @today @done (2018-2-27 22:28:49)
     ✔ Make the Cancel and Save interactable @done (2018-2-28 06:34:48)
-    ☐ Add a form which accepts a title and a blog post text
+    ✔ Add a form which accepts a title and a blog post text @done (2018-3-1 06:41:02)
+    ☐ Style the new post form 
     ☐ On save save it to storage - either on local storage
     ☐ make the height of Cancel and save buttons equal to that of nav bar
     ☐ Center align cancel and save buttons
@@ -17,9 +18,11 @@ Need to learn:
     ☐ CSS Grid layout - @low 
     ☐ http://howtocenterincss.com/
     ☐ http://phrogz.net/CSS/vertical-align/index.html
+    ☐ CSS Variables
 
     
 Backlog:
+    ☐ Theme this webste using CSS Variables
     ☐ Provide APIs
     ☐ Have a backend storage
     ☐ Pull and store data at the backend

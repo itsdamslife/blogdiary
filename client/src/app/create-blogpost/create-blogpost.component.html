@@ -11,8 +11,15 @@
         </div>
         <div class="save-btn">
             <nav>
-                <a routerLink="/" style="color: darkcyan;">Save</a>
+                <a style="color: darkcyan;" (click)="save()">Save</a>
             </nav>
         </div>
     </div>
 </mat-toolbar>
+
+<div style="margin:1%">
+    <label>
+        <input id="titleField" [(ngModel)]="blogpost.title" placeholder="Enter a title for your post!">
+        <textarea id="blogpost" [(ngModel)]="blogpost.description" placeholder="Enter a title for your post!"></textarea>
+    </label>
+</div>
