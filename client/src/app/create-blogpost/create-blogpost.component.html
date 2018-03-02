@@ -19,7 +19,7 @@
 
 <div style="margin:1%">
     <label>
-        <input id="titleField" [(ngModel)]="blogpost.title" placeholder="Enter a title for your post!">
-        <textarea id="blogpost" [(ngModel)]="blogpost.description" placeholder="Enter a title for your post!"></textarea>
+        <input type='text' id="titleField" [(ngModel)]="blogpost.title" placeholder="Enter a title for your post!">
+        <textarea id="blogpost" onfocus="background:'#e5fff3';" onblur="background:'white'" [(ngModel)]="blogpost.description" placeholder="Jolt down your thoughts for this post!"></textarea>
     </label>
 </div>

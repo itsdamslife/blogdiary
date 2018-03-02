@@ -1,5 +1,6 @@
 .toolbar {
     flex: auto;
+    border-radius: 4px;
 }
 
 .container {
@@ -40,7 +41,6 @@
   white-space: nowrap;
 }
 
-
 nav a {
     padding: 5px 10px;
     text-decoration: none;
@@ -62,11 +62,29 @@ nav a.active {
 
 #titleField {
     width: 97%;
+    height: 30;
     margin: 1%;
+    border: 3px solid #cccccc;
+	padding: 5px;
+    font: oblique small-caps bold 27px Tahoma, sans-serif;
+    border-radius: 5px;
 }
 
-#blogpost {
+textarea#blogpost {
     width: 97%;
     min-height: 500px;
-    margin: 1%
+    margin: 1%;
+	border: 3px solid #cccccc;
+	padding: 5px;
+    font-family: Tahoma, sans-serif;
+    border-radius: 4px;
+    resize: none;
+}
+
+input:focus {
+    background: rgb(247, 225, 185);
+}
+
+textarea:focus {
+    background: rgb(247, 225, 185);
 }

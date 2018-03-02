@@ -6,8 +6,12 @@ Today's task list:
     ✔ Space out the cancel, save and new post title elements @today @done (2018-2-27 22:28:49)
     ✔ Make the Cancel and Save interactable @done (2018-2-28 06:34:48)
     ✔ Add a form which accepts a title and a blog post text @done (2018-3-1 06:41:02)
-    ☐ Style the new post form 
-    ☐ On save save it to storage - either on local storage
+    ✔ Style the new post form elements @done (2018-3-2 06:42:57)
+    ☐ On save click save it to runtime list - just to test
+    ☐ Enable local storage
+    ☐ Post Detail screen to read a post content
+    ☐ Provide a delete post option
+    ☐ Multi select and delete options
     ☐ make the height of Cancel and save buttons equal to that of nav bar
     ☐ Center align cancel and save buttons
     
@@ -23,6 +27,7 @@ Need to learn:
     
 Backlog:
     ☐ Theme this webste using CSS Variables
+    ☐ Editor screen needs a toolbar with format options Bold, Italic and Underline
     ☐ Provide APIs
     ☐ Have a backend storage
     ☐ Pull and store data at the backend
