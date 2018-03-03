@@ -25,11 +25,15 @@ export class BlogpostsComponent implements OnInit {
   constructor(private blogpostService: BlogpostService) { }
 
   ngOnInit() {
-    this.posts = this.updatePosts();
+    this.updatePosts();
   }
 
   updatePosts() {
-    return this.blogpostService.getPosts();
+    this.blogpostService.getPosts()
+      .subscribe(posts => {
+        console.log("Subscribe method: " + posts.length);
+        this.posts = posts;
+      });
   }
 
   createNewPost() {

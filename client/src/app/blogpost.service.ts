@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { of } from 'rxjs/observable/of';
 
 import { Blogpost } from './blogpost';
 import { BLOGPOSTS } from './mock_blogposts';
@@ -8,8 +10,8 @@ export class BlogpostService {
 
   constructor() { }
 
-  getPosts() {
-    return BLOGPOSTS;
+  getPosts(): Observable<Blogpost[]> {
+    return of(BLOGPOSTS);
   }
 
   addPost(blogpost: Blogpost) {
