@@ -1,6 +1,7 @@
 .toolbar {
     flex: auto;
     border-radius: 4px;
+    background: #119999;
 }
 
 .container {
@@ -82,9 +83,9 @@ textarea#blogpost {
 }
 
 input:focus {
-    background: rgb(247, 225, 185);
+    background: #a9c9c9;
 }
 
 textarea:focus {
-    background: rgb(247, 225, 185);
+    background: #a9c9c9;
 }
