@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DatePipe } from '@angular/common';
-
+import { BlogpostService } from '../blogpost.service';
 import { Blogpost } from '../blogpost';
 
 @Component({
@@ -17,7 +17,7 @@ export class CreateBlogpostComponent implements OnInit {
     publishedDate: ""
   }
 
-  constructor() { }
+  constructor(private blogpostService: BlogpostService) { }
 
   ngOnInit() {
   }
@@ -31,6 +31,9 @@ export class CreateBlogpostComponent implements OnInit {
     console.log("Saved!!\n"+this.blogpost.title);
     console.log("\n" + this.blogpost.description);
     console.log("\n" + this.blogpost.publishedDate);
+
+    // Need to use a service to save it to mock blogpost list
+    this.blogpostService.addPost(this.blogpost);
   }
 
 }

@@ -8,8 +8,13 @@ export class BlogpostService {
 
   constructor() { }
 
-  addPost() {
-    
+  getPosts() {
+    return BLOGPOSTS;
+  }
+
+  addPost(blogpost: Blogpost) {
+    // add to the top of the list
+    BLOGPOSTS.unshift(blogpost);
   }
   
 }

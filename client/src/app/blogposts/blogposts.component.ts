@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Blogpost } from '../blogpost'
-import { BLOGPOSTS } from '../mock_blogposts';
+import { BlogpostService } from '../blogpost.service'
 
 @Component({
   selector: 'app-blogposts',
@@ -20,11 +20,16 @@ export class BlogpostsComponent implements OnInit {
     publishedDate: 'Feb 10 2018'
   };
 
-  posts: Blogpost[] = BLOGPOSTS;
+  posts: Blogpost[];
 
-  constructor() { }
+  constructor(private blogpostService: BlogpostService) { }
 
   ngOnInit() {
+    this.posts = this.updatePosts();
+  }
+
+  updatePosts() {
+    return this.blogpostService.getPosts();
   }
 
   createNewPost() {

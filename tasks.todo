@@ -7,14 +7,15 @@ Today's task list:
     ✔ Make the Cancel and Save interactable @done (2018-2-28 06:34:48)
     ✔ Add a form which accepts a title and a blog post text @done (2018-3-1 06:41:02)
     ✔ Style the new post form elements @done (2018-3-2 06:42:57)
-    ☐ On save click save it to runtime list - just to test
-    ☐ Enable local storage
+    ✔ On save click save it to runtime list - just to test @done (2018-3-3 06:38:12)
+    ☐ On coming back to post list screen new post must be updated in the list
     ☐ Post Detail screen to read a post content
     ☐ Provide a delete post option
     ☐ Multi select and delete options
     ☐ make the height of Cancel and save buttons equal to that of nav bar
     ☐ Center align cancel and save buttons
     ☐ Create a comic theme for the website
+    ☐ Enable local storage
     
 Need to learn:
     ✔ CSS - how to stick the elements in their position @critical  - using display: grid; @done (2018-2-27 22:29:13)
