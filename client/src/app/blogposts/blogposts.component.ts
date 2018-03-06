@@ -31,7 +31,6 @@ export class BlogpostsComponent implements OnInit {
   updatePosts() {
     this.blogpostService.getPosts()
       .subscribe(posts => {
-        console.log("Subscribe method: " + posts.length);
         this.posts = posts;
       });
   }
@@ -39,5 +38,8 @@ export class BlogpostsComponent implements OnInit {
   createNewPost() {
   }
 
+  showPostDetail(post) {
+    console.log("show post detail for " + post.title);
+  }
 
 }

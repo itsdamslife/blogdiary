@@ -8,13 +8,13 @@ Today's task list:
     ✔ Add a form which accepts a title and a blog post text @done (2018-3-1 06:41:02)
     ✔ Style the new post form elements @done (2018-3-2 06:42:57)
     ✔ On save click save it to runtime list - just to test @done (2018-3-3 06:38:12)
+    ✔ Enable local storage @done (2018-3-3 14:36:29)
     ✔ On coming back to post list screen new post must be updated in the list @done (2018-3-3 14:36:25)
     ☐ Post Detail screen to read a post content
     ☐ Provide a edit and delete post option
     ☐ make the height of Cancel and save buttons equal to that of nav bar
     ☐ Center align cancel and save buttons
     ☐ Create a comic theme for the website
-    ✔ Enable local storage @done (2018-3-3 14:36:29)
     
 Need to learn:
     ✔ CSS - how to stick the elements in their position @critical  - using display: grid; @done (2018-2-27 22:29:13)
@@ -23,7 +23,7 @@ Need to learn:
     ✔ CSS Grid layout - @low @done (2018-3-4 20:42:48)
     ✔ http://howtocenterincss.com/ @done (2018-3-4 20:46:38)
     ✔ http://phrogz.net/CSS/vertical-align/index.html @done (2018-3-4 20:48:21)
-    ☐ CSS Variables - https://medium.freecodecamp.org/how-to-make-responsiveness-super-simple-with-css-variables-8c90ebf80d7f
+    ✔ CSS Variables - https://medium.freecodecamp.org/how-to-make-responsiveness-super-simple-with-css-variables-8c90ebf80d7f @done (2018-3-6 05:57:58)
     
 Backlog:
     ☐ Theme this webste using CSS Variables

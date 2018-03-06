@@ -19,10 +19,12 @@
 </mat-toolbar>
 
 <div class="container" align="center">
-  <ul *ngFor="let post of posts">
+  <ul *ngFor="let post of posts" (click)="showPostDetail(post)">
+    <a routerLink="/postdetail/{{post.id}}"> 
       <div class="post">
         <h4><span class='left post-title'>{{ post.title }}</span></h4><span class='right date-text'>{{ post.publishedDate | date }}</span><br>
         <h5><span class='left post-desc'>{{ post.description }}</span></h5>
       </div>
+    </a>
   </ul>
 </div>

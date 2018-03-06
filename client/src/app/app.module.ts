@@ -12,12 +12,14 @@ import { BlogpostsComponent } from './blogposts/blogposts.component';
 import { BlogpostService } from './blogpost.service';
 import { CreateBlogpostComponent } from './create-blogpost/create-blogpost.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { BlogpostDetailComponent } from './blogpost-detail/blogpost-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlogpostsComponent,
-    CreateBlogpostComponent
+    CreateBlogpostComponent,
+    BlogpostDetailComponent
   ],
   imports: [
     BrowserModule,

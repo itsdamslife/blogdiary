@@ -11,7 +11,7 @@ import { Blogpost } from '../blogpost';
 export class CreateBlogpostComponent implements OnInit {
 
   blogpost: Blogpost = {
-    id: 12345,
+    id: 0,
     title: "",
     description: "",
     publishedDate: ""
@@ -27,7 +27,8 @@ export class CreateBlogpostComponent implements OnInit {
   }
 
   save() {
-    this.blogpost.publishedDate = "" + Date.now();
+    this.blogpost.id = Date.now();
+    this.blogpost.publishedDate = "" + this.blogpost.id;
     console.log("Saved!!\n"+this.blogpost.title);
     console.log("\n" + this.blogpost.description);
     console.log("\n" + this.blogpost.publishedDate);

@@ -13,7 +13,7 @@ export class BlogpostService {
   getPosts(): Observable<Blogpost[]> {
     if (typeof (Storage) !== "undefined") {
       var bps = localStorage.getItem("blogposts");
-      console.log(" blogposts from local storage : \n" + bps);
+      // console.log(" blogposts from local storage : \n" + bps);
       var bpsArray: Blogpost[] = JSON.parse(bps);
       return of(bpsArray);
     } else {
@@ -27,7 +27,7 @@ export class BlogpostService {
     // BLOGPOSTS.unshift(blogpost);
     if (typeof (Storage) !== "undefined") {
       var bps = localStorage.getItem("blogposts");
-      console.log(" blogposts from local storage : \n" + bps);
+      // console.log(" blogposts from local storage : \n" + bps);
       var bpsArray: Blogpost[] = JSON.parse(bps);
       bpsArray.unshift(blogpost);
       localStorage.setItem("blogposts", JSON.stringify(bpsArray));

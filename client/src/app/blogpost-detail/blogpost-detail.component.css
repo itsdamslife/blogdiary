@@ -1,0 +1,11 @@
+.toolbar {
+    flex: auto;
+    border-radius: 4px;
+    background: #119999;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+    width: 98%;
+}
