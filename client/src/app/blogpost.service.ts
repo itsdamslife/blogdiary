@@ -22,6 +22,24 @@ export class BlogpostService {
     return of(BLOGPOSTS);
   }
 
+  getPost(id): Observable<Blogpost> {
+    if(typeof (Storage) !== "undefined") {
+      var bps = localStorage.getItem("blogposts");
+      // console.log(" blogposts from local storage : \n" + bps);
+      var bpsArray: Blogpost[] = JSON.parse(bps);
+
+      var i;
+      for (i = 0; i < bpsArray.length; i++) {
+        var bp: Blogpost = bpsArray[i];
+        if(bp.id === id) {
+          return of(bp);
+        }
+      } 
+    } else {
+      console.log("Sorry! No Web Storage support..");
+    }
+  }
+
   addPost(blogpost: Blogpost) {
     // add to the top of the list
     // BLOGPOSTS.unshift(blogpost);
@@ -34,6 +52,10 @@ export class BlogpostService {
     } else {
       console.log("Sorry! No Web Storage support..");
     }
+  }
+
+  deletePost(id) {
+    
   }
   
 }

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
+import { BlogpostService } from '../blogpost.service';
+import { Blogpost } from '../blogpost';
+
 @Component({
   selector: 'app-blogpost-detail',
   templateUrl: './blogpost-detail.component.html',
@@ -8,7 +11,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class BlogpostDetailComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute) { }
+  blogpost: Blogpost;
+
+  constructor(private route: ActivatedRoute, private blogpostService: BlogpostService) { }
 
   ngOnInit() {
     this.getPost();
@@ -16,6 +21,11 @@ export class BlogpostDetailComponent implements OnInit {
 
   getPost(): void {
     const id = +this.route.snapshot.paramMap.get('id');
-    console.log("The blogpost id: " + id)
+    console.log("The blogpost id: " + id);
+    this.blogpostService.getPost(id)
+      .subscribe(post => {
+        console.log("The blogpost post: " + post.title);
+        this.blogpost = post;
+      });
   }
 }
