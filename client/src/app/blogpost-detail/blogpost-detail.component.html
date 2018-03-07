@@ -1,12 +1,25 @@
 
 <mat-toolbar class="toolbar">
   <div class="container">
+    <div class="cancel-btn">
+      <nav>
+        <a id="deleteButton" style="color: red;" (click)="deletePost()">Delete</a>
+      </nav>
+    </div>
     <div class="title-text" style="padding-top:15px;">
-      <span style="color:aliceblue;">{{ blogpost.title }}</span>
+      <span>{{ blogpost.title }}</span>
+    </div>
+    <div class="save-btn">
+      <nav>
+        <a id="editButton" style="color: darkcyan;" (click)="editPost()">Edit</a>
+      </nav>
     </div>
   </div>
 </mat-toolbar>
 
-<p>
-  blogpost-detail works!
-</p>
+<div style="margin:1%">
+  <label>
+    <input type='text' id="titleField" [(ngModel)]="blogpost.title" placeholder="Enter a title for your post!" readonly>
+    <textarea id="blogpost" onfocus="background:'#e5fff3';" onblur="background:'white'" [(ngModel)]="blogpost.description" placeholder="Jolt down your thoughts for this post!"></textarea>
+  </label>
+</div>

@@ -28,4 +28,13 @@ export class BlogpostDetailComponent implements OnInit {
         this.blogpost = post;
       });
   }
+
+  editPost() {
+    console.log("Edit post!!");
+  }
+
+  deletePost() {
+    console.log("Delete post!!");
+  }
+
 }
