@@ -19,7 +19,7 @@ export class BlogpostDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, 
     private blogpostService: BlogpostService,
     private location: Location) { 
-      
+
     }
 
   ngOnInit() {
@@ -31,7 +31,7 @@ export class BlogpostDetailComponent implements OnInit {
       document.getElementById('titleField').removeAttribute('disabled');
       document.getElementById('blogpost').removeAttribute('disabled');
       document.getElementById('deleteButton').innerHTML = "Cancel";
-      document.getElementById('editButton').innerHTML = "Save";
+      document.getElementById('editButton').innerHTML = "Save & Publish";
     } else {
       document.getElementById('titleField').setAttribute("disabled", "disabled");
       document.getElementById('blogpost').setAttribute("disabled", "disabled");
@@ -68,7 +68,8 @@ export class BlogpostDetailComponent implements OnInit {
       this.isPostInEditMode = true;
     } else {
       this.isPostInEditMode = false;
-      // update the blogpost thru the service
+      this.blogpostService.updatePost(this.blogpost);
+      this.location.back();
     }
     this.switchToEditMode(this.isPostInEditMode);
 

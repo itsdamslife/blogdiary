@@ -55,7 +55,26 @@ export class BlogpostService {
   }
 
   updatePost(blogpost: Blogpost) {
+    if (typeof (Storage) !== "undefined") {
+      var bps = localStorage.getItem("blogposts");
+      // console.log(" blogposts from local storage : \n" + bps);
+      var bpsArray: Blogpost[] = JSON.parse(bps);
 
+      var i;
+      var bp: Blogpost;
+      for (i = 0; i < bpsArray.length; i++) {
+        bp = bpsArray[i];
+        if (bp.id === blogpost.id) {
+          bp.title = blogpost.title;
+          bp.description = blogpost.description;
+          break;
+        }
+      }
+      bpsArray.splice(i, 1, bp);
+      localStorage.setItem("blogposts", JSON.stringify(bpsArray));
+    } else {
+      console.log("Sorry! No Web Storage support..");
+    }
   }
 
   deletePost(id) {
