@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 import { BlogpostService } from '../blogpost.service';
 import { Blogpost } from '../blogpost';
@@ -15,7 +16,11 @@ export class BlogpostDetailComponent implements OnInit {
   blogpostBeforeEditing: Blogpost = new Blogpost();
   isPostInEditMode: Boolean = false;
 
-  constructor(private route: ActivatedRoute, private blogpostService: BlogpostService) { }
+  constructor(private route: ActivatedRoute, 
+    private blogpostService: BlogpostService,
+    private location: Location) { 
+      
+    }
 
   ngOnInit() {
     this.getPost();
@@ -79,9 +84,8 @@ export class BlogpostDetailComponent implements OnInit {
       this.restoreBackUpPost();
       this.blogpostBeforeEditing = new Blogpost();
     } else {
-      // Delete operation
-      this.isPostInEditMode = true;
-      // Delete the post thru service
+      this.blogpostService.deletePost(this.blogpost.id);
+      this.location.back();
     }
     this.switchToEditMode(this.isPostInEditMode);
   }

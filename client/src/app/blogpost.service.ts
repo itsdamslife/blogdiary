@@ -54,8 +54,28 @@ export class BlogpostService {
     }
   }
 
+  updatePost(blogpost: Blogpost) {
+
+  }
+
   deletePost(id) {
-    
+    if (typeof (Storage) !== "undefined") {
+      var bps = localStorage.getItem("blogposts");
+      // console.log(" blogposts from local storage : \n" + bps);
+      var bpsArray: Blogpost[] = JSON.parse(bps);
+
+      var i;
+      for (i = 0; i < bpsArray.length; i++) {
+        var bp: Blogpost = bpsArray[i];
+        if (bp.id === id) {
+          break;
+        }
+      }
+      bpsArray.splice(i, 1);
+      localStorage.setItem("blogposts", JSON.stringify(bpsArray));
+    } else {
+      console.log("Sorry! No Web Storage support..");
+    }
   }
   
 }
