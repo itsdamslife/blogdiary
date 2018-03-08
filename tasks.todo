@@ -13,13 +13,13 @@ Today's task list:
     ✔ Post Detail screen to read a post content @done (2018-3-7 06:30:18)
     ✔ Make the title and description field non-editable @done (2018-3-7 06:36:12)
     ☐ Edit button should Enable editing the post
-    ☐ On Edit : Edit button must change title to Save, Delete -> Cancel: takes back to post detail screen
+    ☐ On start Editing : Edit button must change title to Save, Delete -> Cancel: takes back to post detail screen
     ☐ Delete button should alert user
     ☐ Alert: Cancel stay back; Delete: Delete the post and take back to main page
     ☐ Provide a edit and delete post option with equal width
     ☐ make the height of Cancel and save buttons equal to that of nav bar
     ☐ Center align cancel and save buttons
-    ☐ Create a comic theme for the website
+    ☐ Create a comic theme for the website (dafont.com)
     
 Need to learn:
     ✔ CSS - how to stick the elements in their position @critical  - using display: grid; @done (2018-2-27 22:29:13)
