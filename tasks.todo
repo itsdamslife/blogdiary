@@ -12,13 +12,10 @@ Today's task list:
     ✔ On coming back to post list screen new post must be updated in the list @done (2018-3-3 14:36:25)
     ✔ Post Detail screen to read a post content @done (2018-3-7 06:30:18)
     ✔ Make the title and description field non-editable @done (2018-3-7 06:36:12)
-    ☐ Edit button should Enable editing the post
-    ☐ On start Editing : Edit button must change title to Save, Delete -> Cancel: takes back to post detail screen
+    ✔ Edit button should Enable editing the post @done (2018-3-8 08:15:47)
+    ✔ On start Editing : Edit button must change title to Save, Delete -> Cancel: takes back to post detail screen @done (2018-3-8 08:15:49)
     ☐ Delete button should alert user
     ☐ Alert: Cancel stay back; Delete: Delete the post and take back to main page
-    ☐ Provide a edit and delete post option with equal width
-    ☐ make the height of Cancel and save buttons equal to that of nav bar
-    ☐ Center align cancel and save buttons
     ☐ Create a comic theme for the website (dafont.com)
     
 Need to learn:
